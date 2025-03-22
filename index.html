@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fan website for the movie 96 featuring details, gallery, and quiz.">
+    <meta name="keywords" content="96, Tamil movie, Vijay Sethupathi, Trisha, quiz, gallery">
+    <meta name="author" content="Priyanshu Nayak">
+    <title>96 - Tale of Two Souls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <header>
+        <h1>96 - Tales Of Two Souls</h1>
+        <p>A romantic drama featuring Vijay Sethupathi and Trisha Krishnan</p>
+    </header>
+    <main>
+        <section id="movie-details">
+            <h2>About the Movie 🎥</h2>
+            <p><strong>Director:</strong> C. Prem Kumar</p>
+            <p><strong>Release Date:</strong> October 3, 2018</p>
+            <p><strong>Runtime:</strong> 158 minutes</p>
+            <p><strong>Genres:</strong> Romance, Drama</p>
+            <p><strong>Plot Summary:</strong> The story follows Ram and Jaanu, who were deeply in love during their school days. After years apart, they meet again at a reunion, leading to a journey filled with memories, emotions, and reflections on their past relationship. 💞</p>
+        </section>
+
+        <section id="cast">
+            <h2>Cast 🎭</h2>
+            <ul>
+                <li><strong>Vijay Sethupathi</strong> as Ram</li>
+                <li><strong>Trisha Krishnan</strong> as Jaanu</li>
+                <li><strong>Supporting Cast:</strong> Devadarshini, Aadukalam Naren, and others.</li>
+            </ul>
+        </section>
+
+        <section id="trailer">
+            <h2>Trailer 📽️</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AW6E5vXSfXo" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery 🖼️</h2>
+            <div class="gallery-container">
+                <img src="desktop-wallpaper-96-tamil-movie-96-movie.jpg" alt="Scene from 96" />
+                <img src="jaanu.jpg" alt="Ram and Jaanu" />
+                <img src="maxresdefault.jpg" alt="Emotional Moment" />
+                <img src="desktop-wallpaper-tamil-film-poster-latest-movie-updates-movie-promotions-branding-online-and-offline-digital-marketing-services-96-movie.jpg" alt="Scene from 96" />
+                <img src="wp4500426.jpg" alt="Scene from 96" />
+            </div>
+        </section>
+
+        <section id="songs">
+            <h2>Song Wall 🎶</h2>
+            <ul class="song-list">
+                <li>
+                    <span>Anthaathi</span>
+                    <button onclick="openSpotify('https://open.spotify.com/track/7ciXqAPQXQVLrl5vGYmlh4?si=2179aa186b50458c')">Play</button>
+                </li>
+                <li>
+                    <span>Thabangale</span>
+                    <button onclick="openSpotify('https://open.spotify.com/track/19D5VyqRPp6C1qvVW19kfj?si=89a50f996bcf4cef')">Play</button>
+                </li>
+                <li>
+                    <span>Kaathalae Kaathalae</span>
+                    <button onclick="openSpotify('https://open.spotify.com/track/09d7oLdf8yepEkOh6XXRf3?si=d6618148fed64816')">Play</button>
+                </li>
+            </ul>
+        </section>
+        
+        <script>
+        function openSpotify(url) {
+            window.open(url, '_blank');
+        }
+        </script>
+
+        <section id="trivia">
+            <h2>Important Movie Trivia 📝</h2>
+            <ul>
+                <li>The film was a major box office success and received critical acclaim. 🌟</li>
+                <li>Vijay Sethupathi and Trisha Krishnan's performances were highly praised. 👏</li>
+                <li>The film's music was composed by Govind Vasantha, which became very popular. 🎵</li>
+                <li>It was remade in Telugu as "Jaanu" in 2020. 🔄</li>
+                <li>The film explores themes of nostalgia and the impact of first love. 💖</li>
+            </ul>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Movie Quiz ❓</h2>
+            <div id="quiz-container">
+                <div id="question"></div>
+                <div id="options"></div>
+                <button id="next-button" style="display: none;">Next</button>
+            </div>
+            <div id="result" style="display: none;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Priyanshu Nayak. All rights reserved. 🌐</p>
+    </footer>
+
+    <!-- Modal for Image Viewing -->
+    <div class="modal" id="image-modal">
+        <img src="" alt="Modal Image" id="modal-image" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
